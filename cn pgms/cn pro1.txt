@@ -1,0 +1,26 @@
+[mca@localhost ~]$ cd Desktop
+[mca@localhost Desktop]$ cat > capitals.txt
+trivandrum
+dispur
+patna
+bangaluru^Z
+[1]+  Stopped                 cat > capitals.txt
+[mca@localhost Desktop]$ cat > state.txt
+kerala
+assam
+bihar
+karnataka
+^Z
+[2]+  Stopped                 cat > state.txt
+[mca@localhost Desktop]$ cut -b 1,2,3,4 state.txt
+kera
+assa
+biha
+karn
+[mca@localhost Desktop]$ cut -c 2,5,7 state.txt
+el
+sm
+ir
+aaa
+[mca@localhost Desktop]$ 
+
